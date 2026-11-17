@@ -95,7 +95,10 @@ Valores aceitos em `status`: `watching`, `done`, `plan` e `drop`. A nota (`rate`
 
 ## 🤖 Uso de IA
 
-Usei ajuda de IA em algumas partes importantes do `script.js`, principalmente na **leitura de arquivos JSON (importação e exportação)** e nos **efeitos visuais**, além de apoio na depuração de erros. Estudei, ajustei e testei cada trecho. As capas e personagens de exemplo (animes fictícios) também foram criados com apoio de IA, para não depender de imagens com direitos autorais.
+
+Usei ajuda de IA em algumas partes importantes do script.js, principalmente na leitura de arquivos JSON (importação e exportação) e nos efeitos visuais, além de apoio na depuração de erros. Estudei, ajustei e testei cada trecho.
+
+As capas dos animes de exemplo (todos fictícios, como Espectro e Ember Blade) também foram criadas com ajuda de IA: algumas no ChatGPT e outras com o Claude. Assim, o projeto não depende de imagens com direitos autorais.
 
 ## 🔮 Ideias para o futuro
 
