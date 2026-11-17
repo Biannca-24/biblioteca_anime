@@ -15,11 +15,7 @@ const STATUSES = {
 
 // Chave usada no armazenamento local e biblioteca inicial de exemplo.
 const STORAGE_KEY = 'animeLib.v1';
-const DEFAULT_LIBRARY = [
-    { id: 1, title: 'Spirited Away', year: 2001, genres: ['Aventura', 'Família'], status: 'done', rate: 5, img: '', note: '' },
-    { id: 2, title: 'Princess Mononoke', year: 1997, genres: ['Fantasia'], status: 'plan', rate: 0, img: '', note: '' },
-    { id: 3, title: 'My Neighbor Totoro', year: 1988, genres: ['Família', 'Fantasia'], status: 'watching', rate: 4, img: '', note: '' }
-];
+const DEFAULT_LIBRARY = [];
 
 // Estado geral da aplicação: lista, item em edição, nota e capa.
 const appState = {
