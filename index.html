@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animex/Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero" id="hero">
+        <div class="glow"></div>
+        <div class="moon" id="moon"></div>
+        <svg class="torii" id="tor" viewBox="0 0 200 170" fill="#ff3d5a">
+            <path d="M10 30 Q100 50 190 30 L190 44 Q100 64 10 44Z" />
+            <rect x="24" y="64" width="152" height="10" />
+            <rect x="42" y="44" width="14" height="126" />
+            <rect x="144" y="44" width="14" height="126" />
+            <rect x="92" y="54" width="16" height="20" />
+        </svg>
+        <nav>
+            <div class="logo">AnimeX<b></b>br</div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="wrap">
+            <div class="titlerow">
+                <h1>Minha Biblioteca</h1>
+                <div class="stats">
+                    <div><span>TOTAL</span><b id="sT">0</b></div>
+                    <div><span>CONCLUÍDOS</span><b id="sC">0</b></div>
+                    <div><span>NOTA MÉDIA</span><b id="sA">–</b></div>
+                </div>
+            </div>
+            <div class="bar">
+                <input id="q" placeholder="Buscar por título…" aria-label="Buscar">
+                <select id="fs" aria-label="Status"></select>
+                <select id="fg" aria-label="Gênero"></select>
+                <select id="so" aria-label="Ordenar">
+                    <option value="new">Mais recentes</option>
+                    <option value="rate">Maior nota</option>
+                    <option value="title">Título A–Z</option>
+                    <option value="year">Ano</option>
+                </select>
+                <button class="btn" id="add">+ Adicionar</button>
+                <button class="btn ghost" id="exp">Exportar</button>
+                <button class="btn ghost" id="imp">Importar</button>
+                <input type="file" id="impf" accept="application/json" hidden>
+            </div>
+            <div class="lib" id="lib"></div>
+        </div>
+    </main>
+    <footer>Seus animes ficam salvos neste navegador. Use Exporte para fazer backup.</footer>
+
+    <div class="ov" id="ov">
+        <div class="modal">
+            <h2 id="mt">Adicionar anime</h2>
+            <form class="f" id="form">
+                <label>TITULO <input id="fTitle" required maxlength="80"></label>
+                <div class="two"><label>ANO <input id="fYear" type="number" min="1900" max="2100"></label>
+                    <label>STATUS <select id="fStatus"></select></label>
+                </div>
+                <label>GÊNERO (separados por virgula) <input id="fGen" placeholder="Ação, Aventura"></label>
+                <label>NOTA <div class="stars" id="fStars"></div></label>
+                <label>CAPA (URL ou arquivo) <input id="fUrl" placeholder="https://..."></label>
+                <div class="row">
+                    <div class="prev" id="prev"></div><input type="file" id="fFile" accept="image/*">
+                </div>
+                <label>ANOTAÇÔES <textarea id="fNote" maxlength="300"></textarea></label>
+                <div class="end"><button type="button" class="btn ghost" id="cancel">Cancelar</button><button
+                        class="btn" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
